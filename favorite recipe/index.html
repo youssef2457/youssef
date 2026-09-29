@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Favorite Recipes</title>
+
+  <!-- EXTERNAL CSS: linked from a separate file -->
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .recipe-card h2 {
+      color: #b5451b;
+      font-size: 1.8rem;
+      border-bottom: 3px solid #e8b84b;
+      padding-bottom: 8px;
+    }
+
+    .steps li {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .ingredients li::marker {
+      color: #b5451b;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#recipe">Recipe</a></li>
+        <li><a href="#terms">Cooking Terms</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h1 id="home" style="text-align: center; color: #7a2e0e; margin-top: 30px;">
+    🍕 My Favorite Recipes
+  </h1>
+  <p style="text-align: center; color: #555; max-width: 500px; margin: 0 auto;">
+    Welcome! Here's my go-to homemade pizza recipe, plus some handy
+    cooking vocabulary at the bottom of the page.
+  </p>
+
+  <main>
+    <section id="recipe" class="recipe-card">
+      <h2>Homemade Pepperoni Pizza</h2>
+
+      <img src="images/pizza.jpg" alt="Homemade pepperoni pizza" class="recipe-image">
+
+      <div class="recipe-columns">
+        <div>
+          <h3>Ingredients</h3>
+          <ul class="ingredients">
+            <li>1 pizza dough ball (store-bought or homemade)</li>
+            <li>1/2 cup tomato sauce</li>
+            <li>1 1/2 cups shredded mozzarella</li>
+            <li>Pepperoni slices</li>
+            <li>1 tbsp olive oil</li>
+            <li>1 tsp dried oregano</li>
+            <li>Fresh basil leaves (optional)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Steps</h3>
+          <ol class="steps">
+            <li>Preheat the oven to 250°C (480°F) with a pizza stone or tray inside.</li>
+            <li>Stretch or roll the dough into a round base.</li>
+            <li>Brush the dough lightly with olive oil.</li>
+            <li>Spread tomato sauce evenly, leaving a border for the crust.</li>
+            <li>Sprinkle mozzarella over the sauce.</li>
+            <li>Arrange pepperoni slices on top and sprinkle with oregano.</li>
+            <li>Bake for 8-12 minutes until the crust is golden and cheese bubbles.</li>
+            <li>Top with fresh basil and slice. Serve hot!</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button onclick="alert('You will need: pizza dough, tomato sauce, mozzarella, pepperoni, olive oil, oregano, and basil.')">
+          Show Ingredients
+        </button>
+        <button onclick="alert('This recipe takes about 30 minutes total (including baking).')">
+          Show Cook Time
+        </button>
+        <button onclick="alert('Makes one 12-inch pizza, serves 2-3 people. Enjoy! 🍕')">
+          Show Servings
+        </button>
+      </div>
+    </section>
+
+    <section id="terms" class="terms-section">
+      <h2>Cooking Terms Glossary</h2>
+      <dl>
+        <dt>Proof</dt>
+        <dd>To let dough rest and rise before baking.</dd>
+
+        <dt>Par-bake</dt>
+        <dd>To partially bake a crust before adding toppings.</dd>
+
+        <dt>Knead</dt>
+        <dd>To work dough with your hands to develop gluten and elasticity.</dd>
+
+        <dt>Preheat</dt>
+        <dd>To heat the oven to the target temperature before putting food in.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <img src="images/icon.png" alt="Pizza slice icon" class="footer-icon">
+  </footer>
+
+</body>
+</html>
